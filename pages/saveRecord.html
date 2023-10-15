@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вы лучший!</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/menu.css">
+    <link rel="stylesheet" href="../styles/newRecord.css">
+
+    <script src="../script/saveRecord.js"></script>
+    <script src="../script/leaderboard.js"></script>
+</head>
+<body>
+
+    <div class="main">
+        <div class="congratulation">
+            <h1 class="newRecord">НОВЫЙ РЕКОРД!</h1>
+            <h2 id="time" class="newRecord"></h2>
+        </div> 
+        
+        <div class="congratulation">
+            <p>Введите свой никнейм</p>
+            <input id="nickname" class="nickname" type="text" id="textInput" maxlength="3" oninput="this.value = this.value.toUpperCase();" placeholder="AAA">
+        </div>
+
+        <button class="send" onclick="send()">Отправить</button>
+
+    </div>
+    <footer>
+        <footer class="footer__inner">
+            <span>Выполнено студентом ВПР24 Запара Иваном</span>
+            <span>2023</span>
+        </footer>
+    </footer>
+</body>
+</html>

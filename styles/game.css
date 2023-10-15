@@ -1,0 +1,93 @@
+.gameWindow {
+    height: calc(100vh - 50px);
+    margin: 10px auto;
+    background-color: #474747;
+    display: grid;
+    border-radius: 20px;
+}
+
+.gameWindow button {
+    cursor: pointer;
+}
+
+.hud {
+    display: inline-table;
+    width: 600px;
+    height: 100px;
+    margin: auto auto;
+}
+
+.hud button {
+    padding: 0;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    border-style: outset;
+    background-color: #acacac;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.hud button:active {
+    background-color: #8d8d8d;
+    transform: translateY(5px);
+}
+
+.hud img {
+    width: 90px;
+    height: 90px;
+}
+
+.counter {
+    text-align: center;
+    background-color: #acacac;
+    font-family: vcr;
+    font-size: 50px;
+    width: 150px;
+    height: 50px;
+    resize: none;
+    margin-top: 25px;
+    margin: 20px 45px;
+    border-style: inset;
+    border-radius: 10px;
+}
+
+.pool {
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(9, 60px);
+    grid-template-rows: repeat(9, 60px);
+}
+
+.pool button {
+    padding: 0;
+    font-family: vcr;
+    border-color: black;
+    border-style: outset;
+    background-color: #9c9c9c;
+}
+
+.pool button:active {
+    background-color: #8d8d8d;
+    box-shadow: 0 2px #535353;
+}
+
+.cell.flagged {
+    background-image: url('../images/Flag.webp');
+    background-size: contain;
+}
+
+.pushed {
+    font-family: vcr;
+    border-color: black;
+    text-align: center;
+    border-style: inset;
+    background-color: #818181;
+    cursor: default;
+    user-select: none;
+    background-size: contain;
+}

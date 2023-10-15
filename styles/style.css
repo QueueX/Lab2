@@ -1,0 +1,64 @@
+@font-face {
+    font-family: vcr;
+    src: url(../fonts/better-vcr_0.ttf);
+}
+
+.gameName {
+    margin-top: 50px;
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-family: vcr;
+    font-size: 80px;
+    text-align: center;
+    color: black;
+    margin-top: 25px;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(170, 170, 170);
+    
+}
+
+footer {
+    text-align: center;
+    font-family: vcr;
+    background-color: #474747;
+    color: #acacac;
+    height: 35px;
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer__inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+
+footer a {
+    color: #acacac;
+    text-decoration: none;
+}
+
+.backButton {
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: block;
+    position: absolute;
+    transition-duration: 0.4s;
+}
+
+.firstImage:hover{
+   opacity: 0.0;
+}

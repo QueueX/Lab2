@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сапёр</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/menu.css">
+    <script src="../script/leaderboard.js"></script>
+    <script src="../script/goToPage.js"></script>
+    <script src="../script/startMenu.js"></script>
+    <script src="../script/displayScore.js"></script>
+</head>
+<body oncontextmenu="return false">
+    
+    <a href="../index.html">
+        <img class="backButton" src="../images/backButton_hover.webp" alt="">
+        <img class="backButton firstImage" src="../images/backButton.webp" alt="">
+    </a>
+
+    <div class="main">
+        
+        <div class="gameName">
+            <img class="logo" src="../images/mine.webp" alt="">
+            <h1 id="difficult"></h1> 
+            <img class="logo" src="../images/mine.webp" alt="">
+        </div>
+        
+        <button class="start" onclick="startGame()">Начать</button>
+                
+        <div class="highscoreTable">
+            <ul id="leaderboard"></ul>
+        </div>
+    </div>
+
+    <footer>
+        <footer class="footer__inner">
+            <span>Выполнено студентом ВПР24 Запара Иваном</span>
+            <span>2023</span>
+        </footer>
+    </footer>
+</body>
+</html>

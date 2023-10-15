@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" src="../images/Flag.png">
+    <title>Игра</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/game.css">
+
+    <script src="../script/getDifficult.js"></script>
+    <script src="../script/goToPage.js"></script>
+    <script src="../script/reset.js"></script>
+    <script src="../script/poolGenerate.js"></script>
+    <script src="../script/timer.js"></script>
+    <script src="../script/cell.js"></script>
+    <script src="../script/mines.js"></script>
+    <script src="../script/styler.js"></script>
+    <script src="../script/win.js"></script>
+    <script src="../script/emotions.js"></script>
+    <script src="../script/leaderboard.js"></script>
+</head>
+<body oncontextmenu="return false">
+
+    <a onclick = 'backToPage()'>
+        <img class="backButton" src="../images/backButton_hover.webp" alt="">
+        <img class="backButton firstImage" src="../images/backButton.webp" alt="">
+    </a>
+
+    <div id="gameWindow" class="gameWindow">
+        <div class="hud">
+            <textarea readonly class = "counter" name="mines" id="mines" cols="3" rows="1">000</textarea>          
+            <button onclick="reset()">
+                <img id="emotions" src="../images/normal.png">
+            </button>
+            <textarea readonly class = "counter" name="time" id="time" cols="3" rows="1">000</textarea>
+        </div>
+
+        <div id="pool" class="pool">
+            <script>poolGenerate()</script>
+        </div>
+    </div>    
+
+    <footer>
+        <footer class="footer__inner">
+            <span>Выполнено студентом ВПР24 Запара Иваном</span>
+            <span>2023</span>
+        </footer>
+    </footer>
+</body>
+</html>

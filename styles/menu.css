@@ -1,0 +1,62 @@
+a {
+    text-align: center;
+    width: 400px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 50px;
+    background-color: #474747;
+    color: #acacac;
+    text-align: center;
+    font-family: vcr;
+    transition-duration: 0.4s;
+    width: 400px;
+    height: 80px;
+    border-radius: 15px;
+}
+
+button:hover {
+    background-color: #acacac;
+    color: #474747;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    line-height: calc(30vh / 6);
+}
+
+.start {
+    text-align: center;
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    min-height: calc(100vh - 35px);
+}
+
+.logo {
+    height: 120px;
+    width: 120px;
+    margin: 0 50px 0 50px;
+}
+
+.highscoreTable {
+    width: 30vw;
+    height: 30vh;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    background-color: #474747;
+    font-family: vcr;
+    font-size: clamp(1vh, 2vw, 4.5vh);
+    color: #acacac;
+}
